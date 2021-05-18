@@ -1,0 +1,29 @@
+﻿@page "/"
+@page "/customers"
+
+@using TelerikBlazorApp1.Shared
+
+
+<div class="container-fluid">
+    <div class='row my-4'>
+        <TelerikGrid Data="@Customers"
+                     Sortable="@true"
+                     Pageable="@true"
+                     TotalCount="@TotalCustomers">
+            <GridColumns>
+                <GridColumn Field="FirstName"></GridColumn>
+                <GridColumn Field="LastName"></GridColumn>
+                <GridColumn Field="Birthday" FieldType="typeof(DateTime)" DisplayFormat="{0:dd/mm/yyyy}"></GridColumn>
+                <GridColumn Field="CountryName"></GridColumn>
+
+                <GridCommandColumn Width="210px">
+                    <GridCommandButton Command="Edit" OnClick="@HandleEditing" Icon="edit">Edit</GridCommandButton>
+                    <GridCommandButton Command="Delete" OnClick="@HandleDeleting" Icon="delete">Delete</GridCommandButton>
+                </GridCommandColumn>
+            </GridColumns>
+            <GridToolBar>
+                <GridCommandButton Command="Add" OnClick="@HandleCreating" Icon="add">Add Customer</GridCommandButton>
+            </GridToolBar>
+        </TelerikGrid>
+    </div>
+</div>

@@ -1,0 +1,144 @@
+﻿@page "/customer/create"
+@page "/customer/edit/{id:int}"
+
+@using TelerikBlazorApp1.Shared
+
+<div class="container-fluid">
+    <div class='row my-4'>
+        <div class='col-12 col-lg-9 border-right'>
+            <div class="row example-wrapper">
+                <div class="col-xs-12 col-sm-6 offset-sm-3 example-col card p-4">
+                    <EditForm Model="@Customer" OnValidSubmit="@HandleValidSubmit" class="k-form">
+                        <DataAnnotationsValidator />
+                        <TelerikValidationSummary></TelerikValidationSummary>
+                        <fieldset>
+                            <legend>User Details</legend>
+
+                            <div class="form-group">
+                                <label for="FNameTb">
+                                    <span>First Name <span class="k-required">*</span></span>
+                                </label>
+                                <TelerikTextBox @bind-Value="@Customer.FirstName" Width="100%" Id="FNameTb" />
+                            </div>
+                            <div class="form-group">
+                                <label for="LNameTb">
+                                    <span>Last Name <span class="k-required">*</span></span>
+                                </label>
+                                <TelerikTextBox @bind-Value="@Customer.LastName" Width="100%" Id="LNameTb" />
+                                <TelerikValidationMessage For="@( () => Customer.LastName)" />
+                            </div>
+                            <div class="form-group">
+                                <label for="PhoneNumber">
+                                    <span>Phone Number <span class="k-required">*</span></span>
+                                </label>
+                                <TelerikMaskedTextBox @bind-Value="@Customer.PhoneNumber"
+                                                      Mask="#.###.###.####" Id="PhoneNumber"></TelerikMaskedTextBox>
+                            </div>
+                            <div class="form-group">
+                                <label for="Birthday">
+                                    <span>Birthday <span class="k-required">*</span></span>
+                                </label>
+                                <TelerikDatePicker @bind-Value="@Customer.Birthday" Width="100%" Id="Birthday" />
+                            </div>
+                            <div class="form-group">
+                                <label for="GenderDDL">
+                                    <span>Gender <span class="k-field-info">optional</span></span>
+                                </label>
+                                <div class="col-12">
+                                    <TelerikRadioGroup Data="@SupportData.Genders" Layout="@RadioGroupLayout.Horizontal"
+                                                       @bind-Value="@Customer.Gender"
+                                                       ValueField="@nameof(GenderModel.GenderId)"
+                                                       TextField="@nameof(GenderModel.GenderText)">
+
+                                    </TelerikRadioGroup>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="CountryDDL">
+                                    <span>Country <span class="k-required">*</span></span>
+                                </label>
+                                <TelerikDropDownList DefaultText="Select country"
+                                                     Filterable="true"
+                                                     Width="100%" PopupHeight="auto" Id="CountryDDL"
+                                                     @bind-Value="@Customer.Country"
+                                                     Data="@SupportData.Countries"
+                                                     TextField="Text"
+                                                     ValueField="Id"></TelerikDropDownList>
+                            </div>
+                            <div class="form-group">
+                                <label for="EmailTb">
+                                    <span>Email <span class="k-required">*</span></span>
+                                </label>
+                                <TelerikTextBox @bind-Value="@Customer.Email" Width="100%" Id="EmailTb" />
+                            </div>
+                            <div class="form-group">
+                                <label for="AnnualSalary">
+                                    <span>Annual Salary</span>
+                                </label>
+                                <TelerikNumericTextBox @bind-Value="@Customer.AnnualSalary"
+                                                       Decimals="2" Format="C"
+                                                       Step="1000m"
+                                                       Width="100%" Id="AnnualSalary" />
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Preferences</legend>
+                            <div class="form-group">
+                                <label for="TeamDDL">
+                                    <span>Favorite sports</span>
+                                </label>
+                                <div class="row">
+                                    @foreach (var sport in SupportData.Sports) {
+                                        var isFavorite = IsFavoriteSport(sport);
+                                        <div class="col-md-6">
+                                            <TelerikCheckBox @bind-Value="@isFavorite" Id="@sport"
+                                                             OnChange="((add) => AddRemoveFavoriteSport(add, sport))"></TelerikCheckBox>
+                                            @sport
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="preferred">
+                                    <span>Preferred countries to travel</span>
+                                </label>
+                                <TelerikMultiSelect Id="preferred" Placeholder="Preferred countries" Filterable="true" Width="100%"
+                                                    Data="@SupportData.CountriesNames" ClearButton="true"
+                                                    @bind-Value="@Customer.PreferedCountries"></TelerikMultiSelect>
+                            </div>
+                            <div class="form-group">
+                                <label for="shipments">
+                                    <span>Country for shipments</span>
+                                </label>
+                                <TelerikAutoComplete Id="shipments" Placeholder="Country for shipments" Width="100%"
+                                                     Data="@SupportData.CountriesNames" ClearButton="true"
+                                                     @bind-Value="@Customer.CountryForShipments"></TelerikAutoComplete>
+                            </div>
+                            <div class="form-group">
+                                <label for="Comments">
+                                    <span>Comments</span>
+                                </label>
+                                <TelerikTextArea @bind-Value="@Customer.Comments" Id="Comments"></TelerikTextArea>
+                            </div>
+                        </fieldset>
+
+                        <ValidationSummary />
+
+                        @if (ShowSuccessMessage) {
+                            <div class="alert alert-info">
+                                Customer created Successfully.
+                            </div>
+                        }
+
+                        <div class="text-right">
+                            <TelerikButton ButtonType="@ButtonType.Button" OnClick="@CancelForm">Cancel</TelerikButton>
+                            <TelerikButton ButtonType="@ButtonType.Submit" Primary="true">Submit</TelerikButton>
+                        </div>
+                    </EditForm>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

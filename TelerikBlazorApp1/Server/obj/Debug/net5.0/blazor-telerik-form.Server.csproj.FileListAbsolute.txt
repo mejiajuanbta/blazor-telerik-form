@@ -1,0 +1,6 @@
+C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Server\obj\Debug\net5.0\blazor-telerik-form.Server.csprojAssemblyReference.cache
+C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Server\obj\Debug\net5.0\blazor-telerik-form.Server.GeneratedMSBuildEditorConfig.editorconfig
+C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Server\obj\Debug\net5.0\blazor-telerik-form.Server.AssemblyInfoInputs.cache
+C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Server\obj\Debug\net5.0\blazor-telerik-form.Server.AssemblyInfo.cs
+C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Server\obj\Debug\net5.0\blazor-telerik-form.Server.csproj.CoreCompileInputs.cache
+C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Server\obj\Debug\net5.0\blazor-telerik-form.Server.MvcApplicationPartsAssemblyInfo.cache

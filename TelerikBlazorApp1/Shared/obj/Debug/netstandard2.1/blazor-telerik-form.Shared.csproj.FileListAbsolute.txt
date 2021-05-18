@@ -1,0 +1,9 @@
+C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Shared\bin\Debug\netstandard2.1\blazor-telerik-form.Shared.deps.json
+C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Shared\bin\Debug\netstandard2.1\blazor-telerik-form.Shared.dll
+C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Shared\bin\Debug\netstandard2.1\blazor-telerik-form.Shared.pdb
+C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Shared\obj\Debug\netstandard2.1\blazor-telerik-form.Shared.csprojAssemblyReference.cache
+C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Shared\obj\Debug\netstandard2.1\blazor-telerik-form.Shared.AssemblyInfoInputs.cache
+C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Shared\obj\Debug\netstandard2.1\blazor-telerik-form.Shared.AssemblyInfo.cs
+C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Shared\obj\Debug\netstandard2.1\blazor-telerik-form.Shared.csproj.CoreCompileInputs.cache
+C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Shared\obj\Debug\netstandard2.1\blazor-telerik-form.Shared.dll
+C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Shared\obj\Debug\netstandard2.1\blazor-telerik-form.Shared.pdb

@@ -1,0 +1,85 @@
+﻿@*@page "/customer/edit/{id:int}"*@
+
+@using TelerikBlazorApp1.Shared
+
+
+<div class="container-fluid">
+    <div class='row my-4'>
+        <div class='col-12 col-lg-9 border-right'>
+            <div class="row example-wrapper">
+                <div class="col-xs-12 col-sm-6 offset-sm-3 example-col card p-4">
+                    <TelerikForm Model="@Customer" OnValidSubmit="@HandleValidSubmit"
+                                 ValidationMessageType="@FormValidationMessageType.Inline">
+                        <FormValidation>
+                            <DataAnnotationsValidator></DataAnnotationsValidator>
+                            <TelerikValidationSummary></TelerikValidationSummary>
+                        </FormValidation>
+
+                        <FormItems>
+                            <FormItem Field="@nameof(Person.Id)" Enabled="false" LabelText="Id"></FormItem>
+                            <FormItem Field="@nameof(Person.FirstName)" LabelText="First Name"></FormItem>
+                            <TelerikValidationMessage For="@( () => Customer.FirstName)" />
+                            <FormItem Field="@nameof(Person.LastName)" LabelText="Last Name"></FormItem>
+                            <TelerikValidationMessage For="@( () => Customer.LastName)" />
+                            <FormItem>
+                                <Template>
+                                    <label for="PhoneNumber" class="k-label k-form-label">Phone Number:</label>
+                                    <TelerikMaskedTextBox @bind-Value="@Customer.PhoneNumber"
+                                                          Mask="0.000.000.0000" Id="PhoneNumber"></TelerikMaskedTextBox>
+                                    <TelerikValidationMessage For="@(() => Customer.PhoneNumber)"></TelerikValidationMessage>
+                                </Template>
+                            </FormItem>
+                            <FormItem Field="@nameof(Person.Birthday)" LabelText="Birthday"></FormItem>
+                            <FormItem>
+                                <Template>
+                                    <TelerikRadioGroup Data="@SupportData.Genders" Layout="@RadioGroupLayout.Horizontal"
+                                                       @bind-Value="@Customer.Gender"
+                                                       ValueField="@nameof(GenderModel.GenderId)"
+                                                       TextField="@nameof(GenderModel.GenderText)">
+
+                                    </TelerikRadioGroup>
+                                </Template>
+                            </FormItem>
+                            <FormItem Field="@nameof(Person.Email)" LabelText="Email"></FormItem>
+                            <FormItem>
+                                <Template>
+                                    <TelerikDropDownList DefaultText="Select country"
+                                                         Filterable="true"
+                                                         Width="100%" PopupHeight="auto" Id="CountryDDL"
+                                                         @bind-Value="@Customer.Country"
+                                                         Data="@SupportData.Countries"
+                                                         TextField="Text"
+                                                         ValueField="Id"></TelerikDropDownList>
+                                </Template>
+                            </FormItem>
+                            <FormItem>
+                                <Template>
+                                    <div class="row">
+                                        @foreach (var sport in SupportData.Sports) {
+                                            var isFavorite = IsFavoriteSport(sport);
+                                            <div class="col-md-6">
+                                                <TelerikCheckBox @bind-Value="@isFavorite" Id="@sport"
+                                                                 OnChange="((add) => AddRemoveFavoriteSport(add, sport))"></TelerikCheckBox>
+                                                @sport
+                                            </div>
+                                        }
+                                    </div>
+                                </Template>
+                            </FormItem>
+                            <FormItem>
+                                <Template>
+                                    <TelerikTextArea @bind-Value="@Customer.Comments" Id="Comments"></TelerikTextArea>
+                                </Template>
+                            </FormItem>
+                        </FormItems>
+                        <FormButtons>
+                            <TelerikButton ButtonType="@ButtonType.Submit" Primary="true">Submit</TelerikButton>
+                            <TelerikButton ButtonType="@ButtonType.Button" OnClick="@CancelForm">Cancel</TelerikButton>
+                        </FormButtons>
+                    </TelerikForm>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

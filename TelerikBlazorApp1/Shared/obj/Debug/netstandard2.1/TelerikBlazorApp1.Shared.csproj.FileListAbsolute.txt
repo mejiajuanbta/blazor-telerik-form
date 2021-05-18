@@ -1,0 +1,8 @@
+C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Shared\bin\Debug\netstandard2.1\TelerikBlazorApp1.Shared.deps.json
+C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Shared\bin\Debug\netstandard2.1\TelerikBlazorApp1.Shared.dll
+C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Shared\bin\Debug\netstandard2.1\TelerikBlazorApp1.Shared.pdb
+C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Shared\obj\Debug\netstandard2.1\TelerikBlazorApp1.Shared.AssemblyInfoInputs.cache
+C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Shared\obj\Debug\netstandard2.1\TelerikBlazorApp1.Shared.AssemblyInfo.cs
+C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Shared\obj\Debug\netstandard2.1\TelerikBlazorApp1.Shared.csproj.CoreCompileInputs.cache
+C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Shared\obj\Debug\netstandard2.1\TelerikBlazorApp1.Shared.dll
+C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Shared\obj\Debug\netstandard2.1\TelerikBlazorApp1.Shared.pdb
