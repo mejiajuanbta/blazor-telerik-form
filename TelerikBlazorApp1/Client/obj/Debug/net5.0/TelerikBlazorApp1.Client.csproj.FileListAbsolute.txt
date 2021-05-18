@@ -419,6 +419,7 @@ C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\obj\Debug\net5.0\Teler
 C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\obj\Debug\net5.0\RazorDeclaration\App.razor.g.cs
 C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\obj\Debug\net5.0\RazorDeclaration\Pages\Chart.razor.g.cs
 C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\obj\Debug\net5.0\RazorDeclaration\Pages\CreateCustomer.razor.g.cs
+C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\obj\Debug\net5.0\RazorDeclaration\Pages\CustomerList.razor.g.cs
 C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\obj\Debug\net5.0\RazorDeclaration\Pages\EditCustomer.razor.g.cs
 C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\obj\Debug\net5.0\RazorDeclaration\Pages\Grid.razor.g.cs
 C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\obj\Debug\net5.0\RazorDeclaration\Pages\Index.razor.g.cs
@@ -434,6 +435,7 @@ C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\obj\Debug\net5.0\Teler
 C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\obj\Debug\net5.0\Razor\App.razor.g.cs
 C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\obj\Debug\net5.0\Razor\Pages\Chart.razor.g.cs
 C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\obj\Debug\net5.0\Razor\Pages\CreateCustomer.razor.g.cs
+C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\obj\Debug\net5.0\Razor\Pages\CustomerList.razor.g.cs
 C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\obj\Debug\net5.0\Razor\Pages\EditCustomer.razor.g.cs
 C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\obj\Debug\net5.0\Razor\Pages\Grid.razor.g.cs
 C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\obj\Debug\net5.0\Razor\Pages\Index.razor.g.cs
@@ -650,5 +652,3 @@ C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\obj\Debug\net5.0\Teler
 C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\obj\Debug\net5.0\TelerikBlazorApp1.Client.dll
 C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\obj\Debug\net5.0\ref\TelerikBlazorApp1.Client.dll
 C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\obj\Debug\net5.0\TelerikBlazorApp1.Client.pdb
-C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\obj\Debug\net5.0\RazorDeclaration\Pages\CustomerList.razor.g.cs
-C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\obj\Debug\net5.0\Razor\Pages\CustomerList.razor.g.cs

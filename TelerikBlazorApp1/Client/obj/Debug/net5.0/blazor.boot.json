@@ -200,13 +200,13 @@
       "mscorlib.dll": "sha256-jU85t8bOVm2PPQRkPJ1kS0nCJIyBjjlet2IR1d9m+RI=",
       "netstandard.dll": "sha256-B6gmXEMfYgOuaOR1g1cGHLn2kDlZYAah4K2XNUZbTs4=",
       "System.Private.CoreLib.dll": "sha256-XY0bl1U8F\/iSbQzkmIHM8UtE\/R9VntZoy\/kMbvuMjTA=",
-      "TelerikBlazorApp1.Shared.dll": "sha256-4kCpPCx+no2KHyNe6AyEaJSRT8320gLMQfkjgE+tSx0=",
-      "TelerikBlazorApp1.Client.dll": "sha256-IuSvVoZkHfGe0+zp2bjgVoe0QUEapQ8hpts4kzR9p3w="
+      "TelerikBlazorApp1.Shared.dll": "sha256-7koLwV1x+UOiTX0oi75jUeVCwgV2U7\/MMwWz5rXfA3Q=",
+      "TelerikBlazorApp1.Client.dll": "sha256-h9SWhUieGSRKmRXdUcvJ2V0sNw0XvN7WmLnSc+1ZFp8="
     },
     "lazyAssembly": null,
     "pdb": {
-      "TelerikBlazorApp1.Shared.pdb": "sha256-psR9IxFdet2wDRbilF53MEMfEa+vtw\/YE2mtBQAYSDo=",
-      "TelerikBlazorApp1.Client.pdb": "sha256-1CrNmlrimp2sQH0MfudLGkJLZTqfq50iZaSBmR3u3k4="
+      "TelerikBlazorApp1.Shared.pdb": "sha256-YaYNZKN+jICzxSVMcnRWjY2VE\/EH2zKL2EjXj6GPWlw=",
+      "TelerikBlazorApp1.Client.pdb": "sha256-d0SBhrz4ohfKVonWS4uF3sG12vaePcIK2vY6EAGznpc="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-OEDZp6noMH3AdT8qd0zd7ZXzy2CsPQ+CZeQnYmRoVWo=",

@@ -21,8 +21,8 @@ namespace TelerikBlazorApp1.Shared {
         [StringLength(15, ErrorMessage = "That name is too long")]
         public string LastName { get; set; }
 
-        //[RegularExpression("[0-2]{1}.[0-9]{3}.[0-9]{3}.[0-9]{4}", 
-        //    ErrorMessage = "Enter a valid phone number")]
+        [RegularExpression(@"[1-2]{1}[.]?\d{3}[.]?\d{3}[.]?\d{4}",
+            ErrorMessage = "Enter a valid phone number")]
         public string PhoneNumber { get; set; }
 
         [Required(ErrorMessage = "An email is required")]

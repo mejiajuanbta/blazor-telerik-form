@@ -25,7 +25,7 @@
                                     <span>Last Name <span class="k-required">*</span></span>
                                 </label>
                                 <TelerikTextBox @bind-Value="@Customer.LastName" Width="100%" Id="LNameTb" />
-                                <TelerikValidationMessage For="@( () => Customer.LastName)" />
+                                <TelerikValidationMessage For="@(() => Customer.LastName)" />
                             </div>
                             <div class="form-group">
                                 <label for="PhoneNumber">
@@ -39,6 +39,7 @@
                                     <span>Birthday <span class="k-required">*</span></span>
                                 </label>
                                 <TelerikDatePicker @bind-Value="@Customer.Birthday" Width="100%" Id="Birthday" />
+                                @*<TelerikValidationTooltip For="@(() => Customer.Birthday)"></TelerikValidationTooltip>*@
                             </div>
                             <div class="form-group">
                                 <label for="GenderDDL">
