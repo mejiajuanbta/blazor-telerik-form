@@ -23,8 +23,8 @@ namespace TelerikBlazorApp1.Server {
         public void ConfigureServices(IServiceCollection services) {
             services.AddDistributedMemoryCache();
 
-            services.AddSingleton<CustomerServer, CustomerServer>();
-
+            services.AddSingleton<CustomerServer>();
+            services.AddSingleton<OrderServer>();
             services.AddControllers()
                 .AddNewtonsoftJson(options =>
                 options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
@@ -43,6 +43,8 @@ namespace TelerikBlazorApp1.Server {
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+
+            app.UseRequestLocalization("en-US");
 
             app.UseHttpsRedirection();
             app.UseBlazorFrameworkFiles();

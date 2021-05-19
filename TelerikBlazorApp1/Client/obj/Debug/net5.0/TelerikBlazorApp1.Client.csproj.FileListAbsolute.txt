@@ -201,10 +201,6 @@ C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\bin\Debug\net5.0\wwwro
 C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\bin\Debug\net5.0\wwwroot\_framework\System.Private.CoreLib.dll.gz
 C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\bin\Debug\net5.0\wwwroot\_framework\dotnet.timezones.blat.gz
 C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\bin\Debug\net5.0\wwwroot\_framework\dotnet.wasm.gz
-C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\bin\Debug\net5.0\wwwroot\_framework\icudt.dat.gz
-C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\bin\Debug\net5.0\wwwroot\_framework\icudt_CJK.dat.gz
-C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\bin\Debug\net5.0\wwwroot\_framework\icudt_EFIGS.dat.gz
-C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\bin\Debug\net5.0\wwwroot\_framework\icudt_no_CJK.dat.gz
 C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\bin\Debug\net5.0\wwwroot\_framework\dotnet.5.0.6.js.gz
 C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\bin\Debug\net5.0\wwwroot\_framework\TelerikBlazorApp1.Shared.dll.gz
 C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\bin\Debug\net5.0\wwwroot\_framework\Microsoft.AspNetCore.Authorization.dll
@@ -402,10 +398,6 @@ C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\bin\Debug\net5.0\wwwro
 C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\bin\Debug\net5.0\wwwroot\_framework\System.Private.CoreLib.dll
 C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\bin\Debug\net5.0\wwwroot\_framework\dotnet.timezones.blat
 C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\bin\Debug\net5.0\wwwroot\_framework\dotnet.wasm
-C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\bin\Debug\net5.0\wwwroot\_framework\icudt.dat
-C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\bin\Debug\net5.0\wwwroot\_framework\icudt_CJK.dat
-C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\bin\Debug\net5.0\wwwroot\_framework\icudt_EFIGS.dat
-C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\bin\Debug\net5.0\wwwroot\_framework\icudt_no_CJK.dat
 C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\bin\Debug\net5.0\wwwroot\_framework\dotnet.5.0.6.js
 C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\bin\Debug\net5.0\wwwroot\_framework\TelerikBlazorApp1.Shared.dll
 C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\bin\Debug\net5.0\wwwroot\_framework\TelerikBlazorApp1.Shared.pdb
@@ -638,10 +630,6 @@ C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\obj\Debug\net5.0\build
 C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\obj\Debug\net5.0\build-gz\IqfrsMyO.gz
 C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\obj\Debug\net5.0\build-gz\Tl584J65.gz
 C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\obj\Debug\net5.0\build-gz\cKzx+Uli.gz
-C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\obj\Debug\net5.0\build-gz\IvLTHzls.gz
-C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\obj\Debug\net5.0\build-gz\yASe0PNS.gz
-C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\obj\Debug\net5.0\build-gz\dwTTLx7t.gz
-C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\obj\Debug\net5.0\build-gz\4mT4+O5B.gz
 C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\obj\Debug\net5.0\build-gz\8ZLN5VeZ.gz
 C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\obj\Debug\net5.0\build-gz\NnbZ2WlZ.gz
 C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\obj\Debug\net5.0\staticwebassets\TelerikBlazorApp1.Client.StaticWebAssets.Manifest.cache
@@ -652,3 +640,10 @@ C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\obj\Debug\net5.0\Teler
 C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\obj\Debug\net5.0\TelerikBlazorApp1.Client.dll
 C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\obj\Debug\net5.0\ref\TelerikBlazorApp1.Client.dll
 C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\obj\Debug\net5.0\TelerikBlazorApp1.Client.pdb
+C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\bin\Debug\net5.0\wwwroot\_framework\Newtonsoft.Json.dll.gz
+C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\bin\Debug\net5.0\wwwroot\_framework\Newtonsoft.Json.dll
+C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\obj\Debug\net5.0\build-gz\1XGMtVMi.gz
+C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\obj\Debug\net5.0\RazorDeclaration\Pages\OrderPage.razor.g.cs
+C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\obj\Debug\net5.0\Razor\Pages\OrderPage.razor.g.cs
+C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\obj\Debug\net5.0\RazorDeclaration\Pages\OrderList.razor.g.cs
+C:\ProjectsTest\TelerikBlazorApp\TelerikBlazorApp1\Client\obj\Debug\net5.0\Razor\Pages\OrderList.razor.g.cs

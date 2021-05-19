@@ -1,0 +1,30 @@
+﻿@page "/orders"
+
+@using TelerikBlazorApp1.Shared
+
+
+<div class="container-fluid">
+    <div class='row my-4'>
+        <TelerikGrid Data="@Orders"
+                     Sortable="@true"
+                     Pageable="@true"
+                     TotalCount="@TotalOrders">
+            <GridColumns>
+                <GridColumn Field="OrderId"></GridColumn>
+                <GridColumn Field="CustomerName"></GridColumn>
+                <GridColumn Field="OrderDate"></GridColumn>
+                <GridColumn Field="OrderStep"></GridColumn>
+                <GridColumn Field="OrderStatus"></GridColumn>
+                <GridColumn Field="OrderAmount"></GridColumn>
+                <GridColumn Field="OrderShipingDate"></GridColumn>
+                <GridCommandColumn Width="210px">
+                    <GridCommandButton Command="Edit" OnClick="@HandleEditing" Icon="edit"></GridCommandButton>
+                    <GridCommandButton Command="Delete" OnClick="@HandleDeleting" Icon="delete"></GridCommandButton>
+                </GridCommandColumn>
+            </GridColumns>
+            <GridToolBar>
+                <GridCommandButton Command="Add" OnClick="@HandleCreating" Icon="add">Create Order</GridCommandButton>
+            </GridToolBar>
+        </TelerikGrid>
+    </div>
+</div>

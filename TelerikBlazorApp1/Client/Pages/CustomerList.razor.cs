@@ -47,5 +47,12 @@ namespace TelerikBlazorApp1.Client.Pages {
             }
 
         }
+
+        void HandleCreateOrder(GridCommandEventArgs args) {
+            var customer = args.Item as Person;
+            if (customer != null) {
+                NavigationManager.NavigateTo("/order/create/" + customer.Id);
+            }
+        }
     }
 }

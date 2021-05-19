@@ -3,7 +3,7 @@
   "config": [ ],
   "debugBuild": true,
   "entryAssembly": "TelerikBlazorApp1.Client",
-  "icuDataMode": 0,
+  "icuDataMode": 2,
   "linkerEnabled": false,
   "resources": {
     "assembly": {
@@ -29,6 +29,7 @@
       "Microsoft.Extensions.Primitives.dll": "sha256-f2PgoftqEkKRuuiAk6S1MHygOuqZBHzB0HOB3vR93TU=",
       "Microsoft.JSInterop.dll": "sha256-0o\/vt4NH\/VfmWZxWcdLsy7WlafnyiNlCMmFoL1QmfMg=",
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-5AkXTXHIeXryrSr97JWjBrndsRjoslMVJ8e7FqupHUw=",
+      "Newtonsoft.Json.dll": "sha256-cs8pHUurDt0IqbB8YXPh560au3q3J\/1wRL9jBddRVmE=",
       "System.IO.Pipelines.dll": "sha256-qj+ITVhmJUAkSBctDayU4uUjNTKdXqAbF2zAxo7\/mkM=",
       "Telerik.DataSource.dll": "sha256-o3WCbebq3RFjKvj6j2Q5jnrErB\/vD1EH8BjLiV8abfc=",
       "Telerik.Documents.SpreadsheetStreaming.dll": "sha256-Dt1+xja43zOyVGS6aCzB\/Y1AYG2Is6lzCHNcTFPaOOI=",
@@ -200,21 +201,17 @@
       "mscorlib.dll": "sha256-jU85t8bOVm2PPQRkPJ1kS0nCJIyBjjlet2IR1d9m+RI=",
       "netstandard.dll": "sha256-B6gmXEMfYgOuaOR1g1cGHLn2kDlZYAah4K2XNUZbTs4=",
       "System.Private.CoreLib.dll": "sha256-XY0bl1U8F\/iSbQzkmIHM8UtE\/R9VntZoy\/kMbvuMjTA=",
-      "TelerikBlazorApp1.Shared.dll": "sha256-7koLwV1x+UOiTX0oi75jUeVCwgV2U7\/MMwWz5rXfA3Q=",
-      "TelerikBlazorApp1.Client.dll": "sha256-h9SWhUieGSRKmRXdUcvJ2V0sNw0XvN7WmLnSc+1ZFp8="
+      "TelerikBlazorApp1.Shared.dll": "sha256-+WWHUZSLzYmHmQpX2sB8ZSCBtKKlNEaKYBPHPTUMCsE=",
+      "TelerikBlazorApp1.Client.dll": "sha256-sGTvNFZgttWdG6apfmcJ\/9142BOKiyH+DuMYwPj1l84="
     },
     "lazyAssembly": null,
     "pdb": {
-      "TelerikBlazorApp1.Shared.pdb": "sha256-YaYNZKN+jICzxSVMcnRWjY2VE\/EH2zKL2EjXj6GPWlw=",
-      "TelerikBlazorApp1.Client.pdb": "sha256-d0SBhrz4ohfKVonWS4uF3sG12vaePcIK2vY6EAGznpc="
+      "TelerikBlazorApp1.Shared.pdb": "sha256-0yxB579AFan98JUxxA84x3K7kDKgouHjuFOTqCwOgKo=",
+      "TelerikBlazorApp1.Client.pdb": "sha256-3RkYHAuXsvTPzQpyQEUn8Q255oYWvxH1khJ4zjFdCQ8="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-OEDZp6noMH3AdT8qd0zd7ZXzy2CsPQ+CZeQnYmRoVWo=",
       "dotnet.wasm": "sha256-YXYNlLeMqRPFVpY2KSDhleLkNk35d9KvzzwwKAoiftc=",
-      "icudt.dat": "sha256-m7NyeXyxM+CL04jr9ui1Z6pVfMWwhHusuz5qNZWpAwA=",
-      "icudt_CJK.dat": "sha256-91bygK5voY9lG5wxP0\/uj7uH5xljF9u7iWnSldT1Z\/g=",
-      "icudt_EFIGS.dat": "sha256-DPfeOLph83b2rdx40cKxIBcfVZ8abTWAFq+RBQMxGw0=",
-      "icudt_no_CJK.dat": "sha256-oM7Z6aN9jHmCYqDMCBwFgFAYAGgsH1jLC\/Z6DYeVmmk=",
       "dotnet.5.0.6.js": "sha256-I5VC+YUYUBudBWJmDVJBNKOtxIJtlwTf75bz+XYls74="
     },
     "satelliteResources": null

@@ -1,0 +1,118 @@
+﻿@page "/order/create/{CustomerId:int?}"
+@page "/order/edit/{OrderId:int}"
+
+@using TelerikBlazorApp1.Shared
+
+<div class="container-fluid">
+    <div class='row my-4'>
+        <div class='col-12 col-lg-9 border-right'>
+            <div class="row example-wrapper">
+                <div class="col-xs-12 col-sm-6 offset-sm-3 example-col card p-4">
+                    <EditForm Model="@CustomerOrder" OnValidSubmit="@HandleValidSubmit" class="k-form">
+                        <DataAnnotationsValidator />
+                        <TelerikValidationSummary></TelerikValidationSummary>
+                        <fieldset>
+                            <legend>Order Details</legend>
+
+                            @if (IsEditing) {
+                                <div class="form-group">
+                                    <label for="orderId">
+                                        <span>Order Id <span class="k-required">*</span></span>
+                                    </label>
+                                    <TelerikNumericTextBox @bind-Value="@CustomerOrder.OrderId" Enabled="false" Width="100%" Id="orderId" Arrows="false" />
+                                </div>
+                            }
+
+                            <div class="form-group">
+                                <label for="customer">
+                                    <span>Customer <span class="k-required">*</span></span>
+                                </label>
+                                <TelerikDropDownList DefaultText="Select customer"
+                                                     Filterable="true"
+                                                     Width="100%" PopupHeight="auto" Id="customer"
+                                                     @bind-Value="@CustomerOrder.CustomerId"
+                                                     Data="@Customers"
+                                                     TextField="Text"
+                                                     ValueField="Id"></TelerikDropDownList>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="orderDate">
+                                    <span>Date <span class="k-required">*</span></span>
+                                </label>
+                                <TelerikDatePicker @bind-Value="@CustomerOrder.OrderDate" Width="100%" Id="orderDate" Min="@DateTime.Now.Date" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="orderStep">
+                                    <span>Step <span class="k-required">*</span></span>
+                                </label>
+                                <TelerikComboBox Data="@OrderSteps" @bind-Value="@CustomerOrder.OrderStep" Id="orderStep" Width="100%"></TelerikComboBox>
+                                <TelerikValidationMessage For="@(() => CustomerOrder.OrderStep)" />
+                                <TelerikValidationTooltip For="@(() => CustomerOrder.OrderStep)" TargetSelector="#orderStep" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="orderStatus">
+                                    <span>Status</span>
+                                </label>
+                                @if (IsEditing) {
+                                    <TelerikAutoComplete Id="orderStatus" Placeholder="Order Status" Width="100%"
+                                                         Data="@SupportData.OrderStatus" ClearButton="true"
+                                                         @bind-Value="@CustomerOrder.OrderStatus"></TelerikAutoComplete>
+                                    <TelerikValidationMessage For="@(() => CustomerOrder.OrderStatus)" />
+                                }
+                                else {
+                                    <TelerikTextBox @bind-Value="@CustomerOrder.OrderStatus" Enabled="false" Width="100%" Id="orderStatus" />
+                                }
+                            </div>
+
+                            <div class="form-group">
+                                <label for="orderAmount">
+                                    <span>Amount</span>
+                                </label>
+                                <TelerikNumericTextBox @bind-Value="@CustomerOrder.OrderAmount"
+                                                       Decimals="2" Format="C"
+                                                       Width="100%" Id="orderAmount" />
+                                <TelerikValidationMessage For="@(() => CustomerOrder.OrderAmount)" />
+                                <TelerikValidationTooltip For="@(() => CustomerOrder.OrderAmount)" TargetSelector="#orderAmount" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="shippingDate">
+                                    <span>Shipping date <span class="k-required">*</span></span>
+                                </label>
+                                <TelerikDateTimePicker @bind-Value="@CustomerOrder.OrderShipingDate" Id="shippingDate" Min="@DateTime.Now.Date.AddDays(2)"></TelerikDateTimePicker>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="orderProducts">
+                                    <span>Products</span>
+                                </label>
+                                <TelerikMultiSelect Id="orderProducts" Placeholder="Select products" Filterable="true" Width="100%"
+                                                    Data="@SupportData.Products" ClearButton="true"
+                                                    @bind-Value="@CustomerOrder.OrderProducts">+
+                                </TelerikMultiSelect>
+                            </div>
+                        </fieldset>
+
+
+                        <ValidationSummary />
+
+                        @if (ShowSuccessMessage) {
+                            <div class="alert alert-info">
+                                Order saved Successfully.
+                            </div>
+                        }
+
+                        <div class="text-right">
+                            <TelerikButton ButtonType="@ButtonType.Button" OnClick="@CancelForm">Cancel</TelerikButton>
+                            <TelerikButton ButtonType="@ButtonType.Submit" Primary="true">Submit</TelerikButton>
+                        </div>
+                    </EditForm>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

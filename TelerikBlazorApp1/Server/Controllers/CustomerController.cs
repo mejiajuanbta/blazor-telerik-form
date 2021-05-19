@@ -42,6 +42,11 @@ namespace TelerikBlazorApp1.Server.Controllers {
                 customer.Country = toUpdate.Country;
                 customer.Gender = toUpdate.Gender;
                 customer.FavoriteSports = toUpdate.FavoriteSports;
+                customer.PhoneNumber = toUpdate.PhoneNumber;
+                customer.CountryForShipments = toUpdate.CountryForShipments;
+                customer.AnnualSalary = toUpdate.AnnualSalary;
+                customer.PreferedCountries = toUpdate.PreferedCountries;
+                customer.Comments = toUpdate.Comments;
             }
         }
 

@@ -3,7 +3,6 @@
 
 @using TelerikBlazorApp1.Shared
 
-
 <div class="container-fluid">
     <div class='row my-4'>
         <TelerikGrid Data="@Customers"
@@ -17,8 +16,9 @@
                 <GridColumn Field="CountryName"></GridColumn>
 
                 <GridCommandColumn Width="210px">
-                    <GridCommandButton Command="Edit" OnClick="@HandleEditing" Icon="edit">Edit</GridCommandButton>
-                    <GridCommandButton Command="Delete" OnClick="@HandleDeleting" Icon="delete">Delete</GridCommandButton>
+                    <GridCommandButton Command="Edit" OnClick="@HandleEditing" Icon="edit"></GridCommandButton>
+                    <GridCommandButton Command="Delete" OnClick="@HandleDeleting" Icon="delete"></GridCommandButton>
+                    <GridCommandButton Command="Create Order" OnClick="@HandleCreateOrder" Icon="add">Create Order</GridCommandButton>
                 </GridCommandColumn>
             </GridColumns>
             <GridToolBar>

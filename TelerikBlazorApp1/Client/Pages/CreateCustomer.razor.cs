@@ -1,8 +1,11 @@
 ﻿using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
+using System.Text.Json;
 using System.Threading.Tasks;
 using TelerikBlazorApp1.Services;
 using TelerikBlazorApp1.Shared;
@@ -21,13 +24,16 @@ namespace TelerikBlazorApp1.Client.Pages {
 
         protected async override Task OnInitializedAsync() {
             await GetDefaultCsutomer();
-
+            await JS.InvokeVoidAsync("console.log", "CurrentCulture", JsonConvert.SerializeObject(CultureInfo.CurrentCulture));
             await base.OnInitializedAsync();
         }
 
         async void HandleValidSubmit() {
-            // implement actual data storage here
-            var result = await CustomerServ.InsertCustomerAsync(Customer);
+            if (Customer.Id > 0) {
+                await CustomerServ.UpdateCustomerAsync(Customer);
+            } else {
+                await CustomerServ.InsertCustomerAsync(Customer);
+            }
 
             ShowSuccessMessage = true;
             await Task.Delay(2000);

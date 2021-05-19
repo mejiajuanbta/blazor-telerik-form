@@ -33,5 +33,22 @@ namespace TelerikBlazorApp1.Shared {
         };
 
         public static List<string> CountriesNames => Countries.Select(c => c.Text).ToList();
+
+        public static List<string> OrderStatus = new List<string> {
+            "Pending",
+            "Shipped",
+            "Complete"
+        };
+
+        public static List<string> Products = new List<string> {
+            "Bars",
+            "Bars_DS",
+            "Classique",
+            "OcclusalPlate",
+            "SleepOrthosis",
+            "Subperiosteal",
+            "X3"
+        };
+
     }
 }

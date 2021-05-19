@@ -13,6 +13,7 @@ namespace TelerikBlazorApp1.Client {
             builder.Services.AddTransient(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
             builder.Services.AddScoped<WeatherForecastService>();
             builder.Services.AddScoped<CustomerService>();
+            builder.Services.AddScoped<OrderService>();
             builder.Services.AddTelerikBlazor();
 
             await builder.Build().RunAsync();

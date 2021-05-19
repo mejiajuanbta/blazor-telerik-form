@@ -39,7 +39,7 @@
                                     <span>Birthday <span class="k-required">*</span></span>
                                 </label>
                                 <TelerikDatePicker @bind-Value="@Customer.Birthday" Width="100%" Id="Birthday" />
-                                @*<TelerikValidationTooltip For="@(() => Customer.Birthday)"></TelerikValidationTooltip>*@
+                                <TelerikValidationTooltip For="@(() => Customer.Birthday)" TargetSelector="Birthday"></TelerikValidationTooltip>
                             </div>
                             <div class="form-group">
                                 <label for="GenderDDL">
@@ -128,7 +128,7 @@
 
                         @if (ShowSuccessMessage) {
                             <div class="alert alert-info">
-                                Customer created Successfully.
+                                Customer saved Successfully.
                             </div>
                         }
 
