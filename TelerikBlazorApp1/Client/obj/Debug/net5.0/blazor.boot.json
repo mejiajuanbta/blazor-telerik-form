@@ -202,12 +202,12 @@
       "netstandard.dll": "sha256-B6gmXEMfYgOuaOR1g1cGHLn2kDlZYAah4K2XNUZbTs4=",
       "System.Private.CoreLib.dll": "sha256-XY0bl1U8F\/iSbQzkmIHM8UtE\/R9VntZoy\/kMbvuMjTA=",
       "TelerikBlazorApp1.Shared.dll": "sha256-+WWHUZSLzYmHmQpX2sB8ZSCBtKKlNEaKYBPHPTUMCsE=",
-      "TelerikBlazorApp1.Client.dll": "sha256-sGTvNFZgttWdG6apfmcJ\/9142BOKiyH+DuMYwPj1l84="
+      "TelerikBlazorApp1.Client.dll": "sha256-OThNUUo1b2c2NOjm18Gp+DhwDux1SrjtmweFT4Bu33M="
     },
     "lazyAssembly": null,
     "pdb": {
       "TelerikBlazorApp1.Shared.pdb": "sha256-0yxB579AFan98JUxxA84x3K7kDKgouHjuFOTqCwOgKo=",
-      "TelerikBlazorApp1.Client.pdb": "sha256-3RkYHAuXsvTPzQpyQEUn8Q255oYWvxH1khJ4zjFdCQ8="
+      "TelerikBlazorApp1.Client.pdb": "sha256-2v7e4oBde18jK6FRVRQuVKaa1PlPZPZoxMvjvrK18HQ="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-OEDZp6noMH3AdT8qd0zd7ZXzy2CsPQ+CZeQnYmRoVWo=",

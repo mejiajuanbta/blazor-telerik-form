@@ -21,6 +21,20 @@ namespace TelerikBlazorApp1.Server {
                 LastName = "Doe",
                 Email = "a@b.com",
                 Birthday = DateTime.Now.AddYears(-25)
+            },
+            new Person {
+                Id = 2,
+                FirstName = "Juan",
+                LastName = "Mejia",
+                Email = "a@b.com",
+                Birthday = DateTime.Now.AddYears(-25)
+            },
+            new Person {
+                Id = 2,
+                FirstName = "Jose",
+                LastName = "Perez",
+                Email = "a@b.com",
+                Birthday = DateTime.Now.AddYears(-25)
             }
         };
     }

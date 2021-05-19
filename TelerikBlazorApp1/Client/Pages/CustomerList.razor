@@ -5,7 +5,7 @@
 
 <div class="container-fluid">
     <div class='row my-4'>
-        <TelerikGrid Data="@Customers"
+        <TelerikGrid Data="@Customers" Height="300px"
                      Sortable="@true"
                      Pageable="@true"
                      TotalCount="@TotalCustomers">
@@ -18,7 +18,7 @@
                 <GridCommandColumn Width="210px">
                     <GridCommandButton Command="Edit" OnClick="@HandleEditing" Icon="edit"></GridCommandButton>
                     <GridCommandButton Command="Delete" OnClick="@HandleDeleting" Icon="delete"></GridCommandButton>
-                    <GridCommandButton Command="Create Order" OnClick="@HandleCreateOrder" Icon="add">Create Order</GridCommandButton>
+                    <GridCommandButton Command="Create Order" OnClick="@HandleCreateOrder" Icon="add" Title="Create Order"></GridCommandButton>
                 </GridCommandColumn>
             </GridColumns>
             <GridToolBar>
